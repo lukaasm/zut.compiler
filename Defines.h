@@ -6,7 +6,7 @@
 #define FAILURE( a ) { std::cerr << "[Error] " << a << std::endl; exit( 1 ); }
 #define WARNING( a ) { std::cout << "[Warning] " << a << std::endl; }
 
-#define DEBUG
+//#define DEBUG
 
 #ifdef DEBUG
     #define SHOW( a ) { std::cout << a << std::endl; }

@@ -216,7 +216,7 @@ int main(int argc, char *argv[])
 	yyparse();
 	table.PushElement( table.TopBlock() );
 	
-	std::ofstream asmFile("app.asm.0", std::ios::out);
+	std::ofstream asmFile("app.asm.labels", std::ios::out);
 	
 	while(!table.GetElements().empty())
 	{
@@ -225,7 +225,7 @@ int main(int argc, char *argv[])
 	}
 	asmFile.close();
 
-	std::ifstream inAsmFile("app.asm.0", std::ios::in);
+	std::ifstream inAsmFile("app.asm.labels", std::ios::in);
 	std::ofstream outAsmFile("app.asm", std::ios::out);
 	
 	std::map<std::string, int> labels;//label name, line number
@@ -278,7 +278,7 @@ int main(int argc, char *argv[])
 	inAsmFile.close();
 	outAsmFile.close();
     
-    std::cout << "Build success! check app.asm" << std::endl;
+    std::cout << "Build success!" << std::endl;
 
 	return 0;
 }
