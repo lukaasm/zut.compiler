@@ -12,32 +12,32 @@ int yyerror(const char *msg, ...);
 %%
 -?[0-9]+\.[0-9]*	{yylval.fval = atof(yytext); return LR;}
 -?[0-9]+			{yylval.ival = atoi(yytext); return LC;}
-\=\=			{ return OP_COMPARE;}
-\<\=			{return OP_LE;}
-\>\=			{return OP_GE;}
-\+			    {return '+';} 
-\=			    {return '=';} 
-\&\&			{return OP_AND;}
-\|\|			{return OP_OR;}
-\!			    {return '!';}
-\<			    {return '<';}
-\>			    {return '>';}
-\,			    {return ',';}
-\*			    {return '*';}
-\(			    {return '(';}
-\)			    {return ')';}
-\[			    {return '[';}
-\]			    {return ']';}
-\{			    {return '{';}
-\}			    {return '}';}
-\/			    {return '/';}
-\%			    {return '%';}
-\-			    {return '-';}
-\^			    {return '^';}
-\|			    {return '|';}
-\&			    {return '&';}
-\?			    {return '?';}
-\:			    {return ':';}
+\=\=			    {return OP_COMPARE;}
+\<\=			    {return OP_LE;}
+\>\=			    {return OP_GE;}
+\+			        {return '+';} 
+\=			        {return '=';} 
+\&\&			    {return OP_AND;}
+\|\|			    {return OP_OR;}
+\!			        {return '!';}
+\<			        {return '<';}
+\>			        {return '>';}
+\,			        {return ',';}
+\*			        {return '*';}
+\(			        {return '(';}
+\)			        {return ')';}
+\[			        {return '[';}
+\]			        {return ']';}
+\{			        {return '{';}
+\}			        {return '}';}
+\/			        {return '/';}
+\%			        {return '%';}
+\-			        {return '-';}
+\^			        {return '^';}
+\|			        {return '|';}
+\&			        {return '&';}
+\?			        {return '?';}
+\:			        {return ':';}
 
 if					{ return IF; }
 else				{ return ELSE; }
