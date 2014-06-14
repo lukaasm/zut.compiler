@@ -1,0 +1,25 @@
+if ( true )
+{
+}
+else
+{
+}
+
+if ( true && false )
+{
+}
+
+int a = 0;
+if ( a < 0 )
+{
+	a = 2;
+}
+
+if ( a <= 0 && ( a > 0 || true ) )
+{
+ 	a = 123;
+}
+else
+{
+	a = 321;
+}

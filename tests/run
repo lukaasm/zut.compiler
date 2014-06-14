@@ -1,0 +1,19 @@
+#!/bin/bash
+
+nr=1
+t="test"
+pliki=$(ls in/)
+for plik in $pliki
+do
+echo "UNITTEST: PLIK-> $plik"
+
+./compilator < in/$plik
+
+mkdir -p out
+mkdir -p out/$plik
+
+cp vm.py /out/$plik/ &> /dev/null
+mv app.asm out/$plik/ &> /dev/null
+
+
+done
