@@ -1,0 +1,9 @@
+int a = 0;
+int b = 1;
+
+int c = 2 + 3;
+int d = 2 * 2;
+int e = 2 / 2;
+int f = a + b;
+int g = a * b;
+int h = a / b;

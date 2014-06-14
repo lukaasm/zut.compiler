@@ -1,0 +1,10 @@
+int a;
+float b;
+bool c;
+
+int d = 2;
+float e = 2.2;
+bool f = true;
+
+a = d;
+d = e;

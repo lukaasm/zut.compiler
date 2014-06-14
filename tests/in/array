@@ -1,0 +1,18 @@
+int a[2][2];
+float b[12];
+
+for ( int d = 0; d < 2; d = d + 1 )
+{
+        for ( int e = 0; e < 2; e = e + 1 )
+        {
+                a[d][e] = 1;
+        }
+}
+
+b[ 10 ] = 10;
+
+int f = 0;
+int k = a[f][f];
+b[0] = k;
+a[f][f] = 123;
+
